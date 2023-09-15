@@ -144,6 +144,16 @@ sources: list[ExampleSource] = [
         name="BEAKER",
         file_extension=".py",
     ),
+    ExampleSource(
+        github_url="https://github.com/nullun/algokit-examples",
+        git_branch="examples",
+        local_dir="../../algokit-utils",
+        example_dir="examples",
+        language_name="algokit",
+        src_comment_flag="# example:",
+        name="ALGOKIT",
+        file_extension=".py",
+    ),
 ]
 
 
