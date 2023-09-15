@@ -145,9 +145,9 @@ sources: list[ExampleSource] = [
         file_extension=".py",
     ),
     ExampleSource(
-        github_url="https://github.com/nullun/algokit-examples",
+        github_url="https://github.com/nullun/algokit-utils-py-examples",
         git_branch="examples",
-        local_dir="../../algokit-utils",
+        local_dir="../../../nullun/algokit-utils-py-examples",
         example_dir="examples",
         language_name="algokit",
         src_comment_flag="# example:",

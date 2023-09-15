@@ -116,7 +116,7 @@ Create a new wallet and generate an account. In the SDKs, connect to kmd through
 	kmd_client = algokit_utils.get_kmd_client_from_algod_client(algod_client)
 	
 	```
-	[Snippet Source](https://github.com/nullun/algokit-examples/blob/examples/examples/accounts.py#L9-L15)
+	[Snippet Source](https://github.com/nullun/algokit-utils-py-examples/blob/examples/examples/accounts.py#L9-L15)
 	<!-- ===ALGOKIT_KMD_CREATE_CLIENT=== -->
 	<!-- ===ALGOKIT_KMD_CREATE_WALLET=== -->
 	```algokit
@@ -128,7 +128,7 @@ Create a new wallet and generate an account. In the SDKs, connect to kmd through
 	print(f"Private Key: {account.private_key}")
 	
 	```
-	[Snippet Source](https://github.com/nullun/algokit-examples/blob/examples/examples/accounts.py#L18-L25)
+	[Snippet Source](https://github.com/nullun/algokit-utils-py-examples/blob/examples/examples/accounts.py#L18-L25)
 	<!-- ===ALGOKIT_KMD_CREATE_WALLET=== -->
 	<!-- ===ALGOKIT_KMD_CREATE_ACCOUNT=== -->
 	```algokit
@@ -138,7 +138,7 @@ Create a new wallet and generate an account. In the SDKs, connect to kmd through
 	print(f"Account mnemonic: {mn}")
 	
 	```
-	[Snippet Source](https://github.com/nullun/algokit-examples/blob/examples/examples/accounts.py#L28-L33)
+	[Snippet Source](https://github.com/nullun/algokit-utils-py-examples/blob/examples/examples/accounts.py#L28-L33)
 	<!-- ===ALGOKIT_KMD_CREATE_ACCOUNT=== -->
 
 === "Python"
