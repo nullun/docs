@@ -106,6 +106,41 @@ Create a new wallet and generate an account. In the SDKs, connect to kmd through
 	[Snippet Source](https://github.com/algorand/js-algorand-sdk/blob/examples/examples/kmd.ts#L40-L48)
 	<!-- ===JSSDK_KMD_CREATE_ACCOUNT=== -->
 
+=== "Algokit"
+	<!-- ===ALGOKIT_KMD_CREATE_CLIENT=== -->
+	```algokit
+	
+	algod_config = algokit_utils.get_default_localnet_config("algod")
+	algod_client = algokit_utils.get_algod_client(algod_config)
+	kmd_config = algokit_utils.get_default_localnet_config("kmd")
+	kmd_client = algokit_utils.get_kmd_client_from_algod_client(algod_client)
+	
+	```
+	[Snippet Source](https://github.com/nullun/algokit-examples/blob/examples/examples/accounts.py#L9-L15)
+	<!-- ===ALGOKIT_KMD_CREATE_CLIENT=== -->
+	<!-- ===ALGOKIT_KMD_CREATE_WALLET=== -->
+	```algokit
+	
+	wallet_name = "Test Wallet"
+	account = algokit_utils.get_or_create_kmd_wallet_account(algod_client, wallet_name, 10, kmd_client)
+	print(f"Wallet Name: {wallet_name}")
+	print(f"New Address: {account.address}")
+	print(f"Private Key: {account.private_key}")
+	
+	```
+	[Snippet Source](https://github.com/nullun/algokit-examples/blob/examples/examples/accounts.py#L18-L25)
+	<!-- ===ALGOKIT_KMD_CREATE_WALLET=== -->
+	<!-- ===ALGOKIT_KMD_CREATE_ACCOUNT=== -->
+	```algokit
+	
+	accout = algokit_utils.get_kmd_wallet_account(algod_client, kmd_client, wallet_name)
+	mn = algosdk.mnemonic.from_private_key(accout.private_key)
+	print(f"Account mnemonic: {mn}")
+	
+	```
+	[Snippet Source](https://github.com/nullun/algokit-examples/blob/examples/examples/accounts.py#L28-L33)
+	<!-- ===ALGOKIT_KMD_CREATE_ACCOUNT=== -->
+
 === "Python"
 	<!-- ===PYSDK_KMD_CREATE_CLIENT=== -->
 	```python
